@@ -6,11 +6,24 @@ This fan project is a fork of [CeRiAl/freesynd](https://github.com/CeRiAl/freesy
 
 ## Screenshots
 
-The following two captures show the **same gameplay frame**. The agent panel, roof and street occupy the same positions in both images.
+Both columns use the same pixels from the same moment in mission one, with the HD layer switched off on the left and on on the right. Each crop is enlarged 3× with nearest-neighbor scaling so you can inspect the actual pixels.
 
-| Original graphics | HD graphics |
-| --- | --- |
-| ![Original indexed artwork in the first mission](remaster/screenshots/mission-original.png) | ![First mission with the HD terrain and sprites](remaster/screenshots/mission-hd.png) |
+**A · Tank and pavement.** Look at the top of the cylinder. The original uses alternating yellow and blue pixels to suggest a highlight. The HD version gives the cap a round highlight and the ground a pattern of paving joints.
+
+![Same tank and pavement crop, original on the left and HD on the right](remaster/screenshots/detail-a.png)
+
+**B · Supports under the roof.** Follow the diagonal braces from the central post. In the original their edges merge into the dark frame. The HD image shows separate beams and small bright fasteners.
+
+![Same roof support crop, original on the left and HD on the right](remaster/screenshots/detail-b.png)
+
+<details>
+<summary>Where are A and B in the full mission frame?</summary>
+
+![Mission one with A marking the tank and B marking the roof support](remaster/screenshots/mission-locations.jpg)
+
+[Full original frame](remaster/screenshots/mission-original.png) · [Full HD frame](remaster/screenshots/mission-hd.png)
+
+</details>
 
 The opening movie is decoded from the player's original INTRO.DAT. The player scales each frame to 1280Ã—800 using two edge-aware Scale2x passes. The screenshot shows frame 300 with the original English subtitle.
 
